@@ -1,5 +1,45 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
-}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1DCD9F;
+    margin: 0;
+  }
+
+  .card {
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 30px;
+
+  }
+
+  .top-suit,
+  .bottom-suit {
+    font-size: 50px;
+  }
+
+  .bottom-suit {
+    transform: rotate(180deg);
+    justify-content: flex-end;
+  }
+
+  .value {
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .red {
+    color: red;
+  }
