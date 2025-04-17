@@ -42,13 +42,19 @@ window.onload = function () {
       value.classList.add("red");
       bottomSuit.classList.add("red");
     }
-    
+    else {
+      topSuit.classList.remove("red");
+      value.classList.remove("red");
+      bottomSuit.classList.remove("red");
+    }
+  }; 
+
     generateCard();
     const button = document.getElementById("refresh");
     button.addEventListener("click", generateCard);
 
-  };
+  
 
 
-
+}
 
